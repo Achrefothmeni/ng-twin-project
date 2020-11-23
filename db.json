@@ -1,0 +1,11 @@
+{
+    "matieres": [
+        {
+            "id":1,
+            "libelle": "Angular",
+            "enseignant": "Badiaa Bouhdid",
+            "ects": "3",
+            "volume": "21"
+        }
+    ]
+  }
