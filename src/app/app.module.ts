@@ -9,16 +9,29 @@ import {HttpClientModule} from '@angular/common/http';
 import {AngularFireModule} from '@angular/fire';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import {environment} from '../environments/environment';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import { SearchComponent } from './components/search/search.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { AddMovieComponent } from './components/add-movie/add-movie.component';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatInputModule} from '@angular/material/input';
+import { SingleMovieComponent } from './components/single-movie/single-movie.component';
+import { UpdateMovieComponent } from './components/update-movie/update-movie.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
-    CategorieComponent
+    CategorieComponent,
+    SearchComponent,
+    AddMovieComponent,
+    SingleMovieComponent,
+    UpdateMovieComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +42,12 @@ import {MatIconModule} from '@angular/material/icon';
     FormsModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatChipsModule,
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

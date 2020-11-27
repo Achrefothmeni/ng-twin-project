@@ -1,1 +1,20 @@
-<p>movie works!</p>
+<div class="example-button-container" style="display: flex; justify-content: space-between; padding-top: 1rem; margin-bottom: 1rem;">
+  <h1>Movies List</h1>
+  <button style="align-self: center;" mat-fab color="warn" aria-label="Example icon button with a bookmark icon" (click)="openDialog()">
+    <mat-icon>add</mat-icon>
+  </button>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+<mat-card class="card hoverable" *ngFor="let movie of movies">
+    <a routerLink="/movie/{{movie.id}}"><img mat-card-image src="{{movie.image}}"> </a>
+    <mat-card-content>
+      <div style="display:flex; justify-content: space-between;"><h2>{{movie.name}}</h2> <h3 style="align-self: center;">{{movie.rating}}/10</h3> </div>
+      <div style="display:flex; justify-content: space-between;"><h3>Année: {{movie.year}}</h3> 
+        <p style="align-self: center; background-color: rgb(230, 230, 230); padding: 0.6rem; border-radius: 25px;">
+        {{movie.genre}}
+        </p></div>
+    </mat-card-content>
+  </mat-card>
+</div>
+

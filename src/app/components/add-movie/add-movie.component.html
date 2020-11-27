@@ -1,0 +1,62 @@
+<div style="text-align: center;">
+  <form #formulaire="ngForm">
+  
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Movie name</mat-label>
+      <input matInput [(ngModel)]="movie.name" #name="ngModel" name="name" required>
+      <mat-error>
+        Ce champ est <strong>obligatoire</strong>
+      </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Movie picture url</mat-label>
+      <input matInput [(ngModel)]="movie.image" #image="ngModel" name="image" required>
+      <mat-error>
+        Ce champ est <strong>obligatoire</strong>
+      </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Genre</mat-label>
+      <input matInput [(ngModel)]="movie.genre" #genre="ngModel" name="genre" required>
+      <mat-error>
+        Ce champ est <strong>obligatoire</strong>
+      </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Year</mat-label>
+      <input matInput [(ngModel)]="movie.year" #year="ngModel" name="year" required pattern="[0-9]{4}">
+      <mat-error *ngIf="year.errors?.required">
+        Ce champ est <strong>obligatoire</strong>
+      </mat-error>
+      <mat-error *ngIf="year.errors?.pattern">
+        Ce champ est numérique <strong>Ex: 2020</strong>
+      </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Movie Description</mat-label>
+      <input matInput [(ngModel)]="movie.description" #desc="ngModel"  name="description" required>
+      <mat-error>
+        Ce champ est <strong>obligatoire</strong>
+      </mat-error>
+  </mat-form-field>
+  <br>
+  <mat-form-field appearance="outline" class="full-width">
+    <mat-label>Movie Rating</mat-label>
+      <input matInput [(ngModel)]="movie.rating" #rating="ngModel" name="rating" required pattern="[0-9]{1}[.]{1}[0-9]{1}|[0-9]{1}">
+      <mat-error *ngIf="rating.errors?.required">
+        Ce champ est <strong>obligatoire</strong>
+      </mat-error>
+      <mat-error *ngIf="rating.errors?.pattern">
+        Ce champ est numérique <strong>Ex: 7.8 ou 7</strong>
+      </mat-error>
+  </mat-form-field>
+  <br>
+  <button class="full-width" mat-raised-button color="primary" (click)="addMovie(formulaire)" [disabled]=formulaire.invalid>Enregistrer</button>
+</form>
+</div>
+
+                        

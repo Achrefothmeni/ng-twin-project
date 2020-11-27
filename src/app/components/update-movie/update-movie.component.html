@@ -1,0 +1,69 @@
+<app-single-movie [movie]=movie></app-single-movie>
+
+<div style="display: flex; justify-content: space-between;">
+<div style="width: 50%; margin-right: 10px;" >
+  <mat-card style="height: 100%;">
+    <form [formGroup]="updateForm" (ngSubmit)="update()">
+    
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Movie name</mat-label>
+        <input matInput formControlName="name">
+        <mat-error *ngIf="updateForm.get('name').errors?.required">
+          Ce champ est <strong>obligatoire</strong>
+        </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Released year</mat-label>
+          <input matInput formControlName="year">
+          <mat-error *ngIf="updateForm.get('year').errors?.required">
+            Ce champ est <strong>obligatoire</strong>
+          </mat-error>
+          <mat-error *ngIf="updateForm.get('year').errors?.pattern">
+            Ce champ est numérique <strong>Ex: 2020</strong>
+          </mat-error>
+      </mat-form-field>
+    <br>
+    <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Genre</mat-label>
+          <input matInput formControlName="genre">
+          <mat-error *ngIf="updateForm.get('genre').errors?.required">
+            Ce champ est <strong>obligatoire</strong>
+          </mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Description</mat-label>
+          <input matInput formControlName="description">
+          <mat-error *ngIf="updateForm.get('description').errors?.required">
+            Ce champ est <strong>obligatoire</strong>
+          </mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Rating</mat-label>
+          <input matInput formControlName="rating">
+          <mat-error *ngIf="updateForm.get('rating').errors?.required">
+            Ce champ est <strong>obligatoire</strong>
+          </mat-error>
+          <mat-error *ngIf="updateForm.get('rating').errors?.pattern">
+            Ce champ est numérique <strong>Ex: 7.8 ou 7</strong>
+          </mat-error>
+      </mat-form-field>
+      <br>
+    <button type="submit" class="full-width" mat-raised-button color="primary" [disabled]="!updateForm.valid">Enregistrer</button>
+  </form>
+</mat-card>
+  </div>
+  <div style="justify-self: center; width: 50%;">
+    <mat-card style="height: 100%;">
+        <h3>{{updateForm.get('name').value}}</h3>
+        <h3>{{updateForm.get('year').value}}</h3>
+        <h3>{{updateForm.get('genre').value}}</h3>
+        <h3>{{updateForm.get('description').value}}</h3>
+        <h3>{{updateForm.get('rating').value}}</h3>
+        <img src={{movie.image}} height="250px" style="border-radius: 20px;">
+    </mat-card>
+  </div>
+</div>                  
+<br><br>

@@ -1,0 +1,27 @@
+<div class="example-button-container" style="display: flex; justify-content: space-between; padding-top: 1rem; margin-bottom: 1rem;">
+    <div style="display: flex;">
+    <a routerLink="/movies" style="align-self: center;">
+        <button style="align-self: center; margin-right: 1rem;" mat-fab color="warn" aria-label="Example icon button with a bookmark icon">
+            <mat-icon>arrow_left</mat-icon>
+        </button>
+    </a>
+    <h1>Movies Details</h1>
+</div>
+    <button style="align-self: center;" mat-fab color="warn" aria-label="Example icon button with a bookmark icon" (click)="delete()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </div>
+
+<div style="display: flex;">
+    <div class="cover" style="margin-right: 2rem;">
+        <img src="{{movie.image}}" style="width: 400px; border-radius: 25px;">
+    </div>
+    <div class="content" style="align-self: center;">
+        <h2>{{movie.name}}</h2>
+        <p>{{movie.description}}</p>
+        <p>Release year: {{movie.year}}</p>
+        <p>Rating: {{movie.rating}}/10</p>
+        <p style="background-color: rgb(230, 230, 230); padding: 0.6rem; border-radius: 25px; width: 10%;">{{movie.genre}}</p>
+    </div>
+</div>
+

@@ -1,11 +1,85 @@
 {
-    "matieres": [
-        {
-            "id":1,
-            "libelle": "Angular",
-            "enseignant": "Badiaa Bouhdid",
-            "ects": "3",
-            "volume": "21"
-        }
-    ]
-  }
+  "movies": [
+    {
+      "id": 1,
+      "name": "Inception",
+      "genre": "Action Sci-fi",
+      "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
+      "year": "2010",
+      "description": "Cobb steals information from his targets by entering their dreams. Saito offers to wipe clean Cobb's criminal history as payment for performing an inception on his sick competitor's son.",
+      "rating": 8
+    },
+    {
+      "id": 2,
+      "name": "Catch Me If You Can",
+      "genre": "Crime Drama",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSFA95uZKTll-AfrEI1yOB7-yPzK_X1DtCF0pRAsOB224-HtAK",
+      "year": "2002",
+      "description": "Notorious con artist Frank Abagnale has duped people worth millions of dollars with his masterful art of deception. With his scams getting bolder, he is soon pursued by FBI agent Carl Hanratty.",
+      "rating": 8
+    },
+    {
+      "id": 3,
+      "name": "Bad Boys",
+      "genre": "Action Comedy",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBjxm_28kNd7B2Zz8qpfzjbwEeTN9STCPF7oSKcWmnRJMdrX9D",
+      "year": "1995",
+      "description": "Marcus, a family man, and Mike, a ladies' man, are partners in the Miami police. Things get complicated when they assume each other's identity while investigating a drug deal.",
+      "rating": 7
+    },
+    {
+      "id": 4,
+      "name": "The Dark Knight Rises",
+      "genre": "Action Thriller",
+      "image": "https://cdn.shopify.com/s/files/1/0037/8008/3782/products/dark_knight_rises_advance_EB05400_B_2_framed1_1170x.jpg?v=1569769276",
+      "year": "2012",
+      "description": "Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.",
+      "rating": 8.4
+    },
+    {
+      "id": 5,
+      "name": "Avengers: Endgame",
+      "genre": "Action Sci-fi",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81%2BNup8-8NL._AC_SL1500_.jpg",
+      "year": "2019",
+      "description": "After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.",
+      "rating": 8.4
+    },
+    {
+      "image": "https://www.movienewsletters.net/photos/112140R1.jpg",
+      "name": "Intouchable",
+      "genre": "Comedy Drama",
+      "year": "2011",
+      "description": "An unusual friendship develops when a street smart immigrant is hired to take care of a disabled French nobleman.",
+      "rating": "8.5",
+      "id": 6
+    },
+    {
+      "name": "Interstellar",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf61mker2o4KH3CbVE7Zw5B1-VogMH8LfZHEaq3UdCMLxARZAB",
+      "genre": "Sci-fi Adventure",
+      "year": "2144",
+      "description": "In the future, where Earth is becoming uninhabitable, farmer and ex-NASA pilot Cooper is asked to pilot a spacecraft along with a team of researchers to find a new planet for humans.",
+      "rating": "8.6",
+      "id": 8
+    },
+    {
+      "id": 9,
+      "name": "Fight Club",
+      "genre": "Drama Thriller",
+      "description": "Discontented with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman. The project soon spirals down into something sinister.",
+      "rating": "8.8",
+      "year": "1999",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNgTszE1phYg2G7H4RrgeSEssOw-Kpnh0Si-sF5pVQQrBXJ_6e"
+    },
+    {
+      "name": "The Shawshank Redemption",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmMH-bEDUS2TmK8amBqgIMgrfzN1_mImChPuMrunA1XjNTSKm",
+      "genre": "Drama/Crime",
+      "year": "1994",
+      "description": "Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life imprisonment at the Shawshank prison. He becomes the most unconventional prisoner.",
+      "rating": "9.3",
+      "id": 10
+    }
+  ]
+}
