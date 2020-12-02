@@ -21,6 +21,12 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatInputModule} from '@angular/material/input';
 import { SingleMovieComponent } from './components/single-movie/single-movie.component';
 import { UpdateMovieComponent } from './components/update-movie/update-movie.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+
+
+
+
 
 
 @NgModule({
@@ -47,7 +53,9 @@ import { UpdateMovieComponent } from './components/update-movie/update-movie.com
     MatDialogModule,
     MatChipsModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

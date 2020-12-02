@@ -38,7 +38,7 @@
   <br>
   <mat-form-field appearance="outline" class="full-width">
     <mat-label>Movie Description</mat-label>
-      <input matInput [(ngModel)]="movie.description" #desc="ngModel"  name="description" required>
+      <textarea matInput [(ngModel)]="movie.description" #desc="ngModel"  name="description" required></textarea>
       <mat-error>
         Ce champ est <strong>obligatoire</strong>
       </mat-error>
